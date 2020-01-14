@@ -1,0 +1,28 @@
+{
+  "name": "purescript-web-fetch",
+  "homepage": "https://github.com/purescript-web/purescript-web-fetch",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purescript-web/purescript-web-fetch.git"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "bower.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^4.0.0",
+    "purescript-effect": "^2.0.0",
+    "purescript-http-methods": "^4.0.0",
+    "purescript-typelevel-prelude": "^5.0.0",
+    "purescript-web-file": "^2.3.0",
+    "purescript-record": "^2.0.0",
+    "purescript-foreign-object": "^2.0.0",
+    "purescript-web-promise": "https://github.com/purescript-web/purescript-web-promise.git#^1.0.0",
+    "purescript-web-streams": "https://github.com/purescript-web/purescript-web-streams.git#^1.0.0"
+  }
+}
