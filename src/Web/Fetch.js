@@ -1,1 +1,3 @@
-exports._fetch = fetch;
+exports._fetch = function(a, b) {
+  return fetch(a, b);
+};
