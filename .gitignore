@@ -1,5 +1,6 @@
 /.*
 !/.gitignore
+!/.eslintrc.json
 !/.github/
 package-lock.json
 /bower_components/
