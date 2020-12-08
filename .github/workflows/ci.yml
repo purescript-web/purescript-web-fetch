@@ -23,6 +23,7 @@ jobs:
           npm install -g bower
           npm install
           bower install --production
+
       - name: Build source
         run: npm run-script build
 
