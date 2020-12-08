@@ -1,3 +1,5 @@
+"use strict";
+
 exports.headers = function (resp) {
   return resp.headers;
 };

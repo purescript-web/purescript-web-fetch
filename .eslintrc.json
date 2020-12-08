@@ -24,6 +24,6 @@
     "radix": [2, "always"],
     "indent": [2, 2],
     "quotes": [2, "double"],
-    "semi": [2, "always"]
+    "semi": [2, "always", { "omitLastInOneLineBlock": true }]
   }
 }
