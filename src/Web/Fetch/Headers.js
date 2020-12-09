@@ -1,3 +1,5 @@
+"use strict";
+
 exports.unsafeNew = function() {
   return new Headers();
 };
@@ -11,12 +13,10 @@ exports.unsafeFromRecord = function(r) {
 };
 
 exports._toArray = function(tuple, headers) {
-  var arr = [];
-  for (var pair of headers.entries()) {
-    arr.push(tuple(pair[0])(pair[1]));
-  }
-  return arr;
-}
+  return Array.from(headers.entries(), function (pair) {
+    return tuple(pair[0])(pair[1]);
+  });
+};
 
 exports.fromObject = function(obj) {
   return new Headers(obj);

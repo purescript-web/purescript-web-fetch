@@ -1,3 +1,5 @@
+"use strict";
+
 exports._unsafeNew = function(url, options) {
   try {
     return new Request(url, options);
