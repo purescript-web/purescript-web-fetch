@@ -22,7 +22,7 @@ import Data.HTTP.Method (Method(..))
 import Data.Maybe (Maybe(..))
 import Data.Newtype (un)
 import Data.Nullable (Nullable, toNullable)
-import Data.Symbol (class IsSymbol, SProxy(..))
+import Data.Symbol (class IsSymbol)
 import Data.Tuple (Tuple)
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
@@ -32,7 +32,7 @@ import Prim.RowList (RowList)
 import Prim.RowList as RowList
 import Record (merge)
 import Record.Builder as Record
-import Type.Data.RowList (RLProxy(..))
+import Type.Proxy (Proxy(..))
 import Type.Row.Homogeneous (class Homogeneous)
 import Web.Fetch.Headers (Headers)
 import Web.Fetch.Headers as Headers
@@ -126,10 +126,10 @@ instance buildRequestOptionsRecord
      , Row.Nub r'' RequestOptions
      )
   => BuildRequestOptions { | r } where
-  buildRequestOptions r = merge (Record.build (convertOptions (RLProxy :: _ rl)) r) defaultOptions
+  buildRequestOptions r = merge (Record.build (convertOptions (Proxy :: _ rl)) r) defaultOptions
 
 class ConvertOptions (rl :: RowList Type) (input :: Row Type) (output :: Row Type) | rl input -> output where
-  convertOptions :: RLProxy rl -> Record.Builder { | input } { | output }
+  convertOptions :: forall rlproxy. rlproxy rl -> Record.Builder { | input } { | output }
 
 instance convertOptionsCons ::
   ( ConvertOptions rest input' output
@@ -139,14 +139,14 @@ instance convertOptionsCons ::
   , IsSymbol field
   ) => ConvertOptions (RowList.Cons field from rest) input output where
   convertOptions _ =
-    convertOptions (RLProxy :: _ rest)
-      <<< Record.modify (SProxy :: _ field) (convertOption (SProxy :: _ field))
+    convertOptions (Proxy :: _ rest)
+      <<< Record.modify (Proxy :: _ field) (convertOption (Proxy :: _ field))
 
 instance convertOptionsNil :: ConvertOptions RowList.Nil r r where
   convertOptions _ = identity
 
 class ConvertOption (field :: Symbol) from to | field -> to where
-  convertOption :: SProxy field -> from -> to
+  convertOption :: forall sproxy. sproxy field -> from -> to
 
 instance convertMethod :: ConvertOption "method" Method Method where
   convertOption _ = identity
