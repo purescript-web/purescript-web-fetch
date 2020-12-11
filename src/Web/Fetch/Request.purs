@@ -28,7 +28,7 @@ import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
 import Foreign.Object (Object)
 import Prim.Row as Row
-import Prim.RowList (kind RowList)
+import Prim.RowList (RowList)
 import Prim.RowList as RowList
 import Record (merge)
 import Record.Builder as Record
@@ -128,7 +128,7 @@ instance buildRequestOptionsRecord
   => BuildRequestOptions { | r } where
   buildRequestOptions r = merge (Record.build (convertOptions (RLProxy :: _ rl)) r) defaultOptions
 
-class ConvertOptions (rl :: RowList) (input :: # Type) (output :: # Type) | rl input -> output where
+class ConvertOptions (rl :: RowList Type) (input :: Row Type) (output :: Row Type) | rl input -> output where
   convertOptions :: RLProxy rl -> Record.Builder { | input } { | output }
 
 instance convertOptionsCons ::
