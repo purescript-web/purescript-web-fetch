@@ -23,6 +23,6 @@
     "purescript-record": "master",
     "purescript-foreign-object": "master",
     "purescript-web-promise": "master",
-    "purescript-web-streams": "master",
+    "purescript-web-streams": "master"
   }
 }
