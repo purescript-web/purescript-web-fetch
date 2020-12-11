@@ -17,12 +17,12 @@
   "dependencies": {
     "purescript-prelude": "master",
     "purescript-effect": "master",
-    "purescript-http-methods": "master",
+    "purescript-http-methods": "main",
     "purescript-typelevel-prelude": "master",
     "purescript-web-file": "master",
     "purescript-record": "master",
     "purescript-foreign-object": "master",
-    "purescript-web-promise": "https://github.com/purescript-web/purescript-web-promise.git#master",
-    "purescript-web-streams": "https://github.com/purescript-web/purescript-web-streams.git#master"
+    "purescript-web-promise": "master",
+    "purescript-web-streams": "master",
   }
 }
