@@ -5,18 +5,20 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
+- Added support for PureScript 0.14 and dropped support for all previous versions (#2)
 
 New features:
 
 Bugfixes:
 
 Other improvements:
+- Migrated CI to GitHub Actions and updated installation instructions to use Spago (#1)
+- Added a CHANGELOG.md file and pull request template (#3, #4)
 
 ## [v1.0.1](https://github.com/purescript-web/purescript-web-fetch/releases/tag/v1.0.1) - 2020-01-15
 
-* Fix illegal fetch invocation when not specifying options
+- Fixed illegal fetch invocation when not specifying options
 
 ## [v1.0.0](https://github.com/purescript-web/purescript-web-fetch/releases/tag/v1.0.0) - 2020-01-14
 
-Initial release.
-
+- Initial release
