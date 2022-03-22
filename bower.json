@@ -22,7 +22,7 @@
     "purescript-record": "master",
     "purescript-typelevel-prelude": "master",
     "purescript-web-file": "master",
-    "purescript-web-promise": "master",
+    "purescript-web-promise": "https://github.com/purescript-web/purescript-web-promise.git#master",
     "purescript-web-streams": "master"
   }
 }
