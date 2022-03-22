@@ -1,5 +1,3 @@
-"use strict";
-
 export function new() {
   return new AbortController();
 }

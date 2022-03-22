@@ -1,5 +1,3 @@
-"use strict";
-
 export function unsafeNew() {
   return new Headers();
 }

@@ -1,5 +1,3 @@
-"use strict";
-
 export function headers(resp) {
   return resp.headers;
 }
