@@ -1,6 +1,7 @@
-export function new() {
+const newImpl = function () {
   return new AbortController();
-}
+};
+export { newImpl as new };
 
 export function abort(controller) {
   return function() {
