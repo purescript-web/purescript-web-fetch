@@ -1,7 +1,7 @@
 "use strict";
 
-exports.fromArrayBuffer = function(a) { return a };
-exports.fromArrayView = function(a) { return a };
-exports.fromString = function(a) { return a };
-exports.fromReadableStream = function(a) { return a };
-exports.empty = null;
+export function fromArrayBuffer(a) { return a }
+export function fromArrayView(a) { return a }
+export function fromString(a) { return a }
+export function fromReadableStream(a) { return a }
+export var empty = null;

@@ -1,15 +1,15 @@
 "use strict";
 
-exports.new = function() {
+export function new() {
   return new AbortController();
-};
+}
 
-exports.abort = function(controller) {
+export function abort(controller) {
   return function() {
     return controller.abort();
   };
-};
+}
 
-exports.signal = function(controller) {
+export function signal(controller) {
   return controller.signal;
-};
+}
