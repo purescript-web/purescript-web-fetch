@@ -1,15 +1,14 @@
-"use strict";
-
-exports.new = function() {
+const newImpl = function () {
   return new AbortController();
 };
+export { newImpl as new };
 
-exports.abort = function(controller) {
+export function abort(controller) {
   return function() {
     return controller.abort();
   };
-};
+}
 
-exports.signal = function(controller) {
+export function signal(controller) {
   return controller.signal;
-};
+}

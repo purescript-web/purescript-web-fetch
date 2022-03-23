@@ -15,14 +15,14 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-effect": "^3.0.0",
-    "purescript-foreign-object": "^3.0.0",
-    "purescript-http-methods": "^5.0.0",
-    "purescript-prelude": "^5.0.0",
-    "purescript-record": "^3.0.0",
-    "purescript-typelevel-prelude": "^6.0.0",
-    "purescript-web-file": "^3.0.0",
-    "purescript-web-promise": "https://github.com/purescript-web/purescript-web-promise.git#2.0.0",
-    "purescript-web-streams": "https://github.com/purescript-web/purescript-web-streams.git#2.0.0"
+    "purescript-effect": "master",
+    "purescript-foreign-object": "master",
+    "purescript-http-methods": "main",
+    "purescript-prelude": "master",
+    "purescript-record": "master",
+    "purescript-typelevel-prelude": "master",
+    "purescript-web-file": "master",
+    "purescript-web-promise": "https://github.com/purescript-web/purescript-web-promise.git#master",
+    "purescript-web-streams": "https://github.com/purescript-web/purescript-web-streams.git#master"
   }
 }

@@ -1,5 +1,3 @@
-"use strict";
-
-exports._fetch = function(a, b) {
+export function _fetch(a, b) {
   return fetch(a, b);
-};
+}

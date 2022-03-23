@@ -1,49 +1,47 @@
-"use strict";
-
-exports.headers = function (resp) {
+export function headers(resp) {
   return resp.headers;
-};
+}
 
-exports.ok = function (resp) {
+export function ok(resp) {
   return resp.ok;
-};
+}
 
-exports.redirected = function (resp) {
+export function redirected(resp) {
   return resp.redirected;
-};
+}
 
-exports.status = function (resp) {
+export function status(resp) {
   return resp.status;
-};
+}
 
-exports.statusText = function (resp) {
+export function statusText(resp) {
   return resp.statusText;
-};
+}
 
-exports.url = function (resp) {
+export function url(resp) {
   return resp.url;
-};
+}
 
-exports.body = function (resp) {
+export function body(resp) {
   return function() {
     return resp.body;
   };
-};
+}
 
-exports.arrayBuffer = function (resp) {
+export function arrayBuffer(resp) {
   return function() {
     return resp.arrayBuffer();
   };
-};
+}
 
-exports.blob = function (resp) {
+export function blob(resp) {
   return function() {
     return resp.blob();
   };
-};
+}
 
-exports.text = function (resp) {
+export function text(resp) {
   return function() {
     return resp.text();
   };
-};
+}

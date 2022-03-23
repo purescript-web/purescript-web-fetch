@@ -1,23 +1,21 @@
-"use strict";
-
-exports.unsafeNew = function() {
+export function unsafeNew() {
   return new Headers();
-};
+}
 
-exports.unsafeAppend = function(key, value, headers) {
+export function unsafeAppend(key, value, headers) {
   return headers.append(key, value);
-};
+}
 
-exports.unsafeFromRecord = function(r) {
+export function unsafeFromRecord(r) {
   return new Headers(r);
-};
+}
 
-exports._toArray = function(tuple, headers) {
+export function _toArray(tuple, headers) {
   return Array.from(headers.entries(), function (pair) {
     return tuple(pair[0])(pair[1]);
   });
-};
+}
 
-exports.fromObject = function(obj) {
+export function fromObject(obj) {
   return new Headers(obj);
-};
+}
