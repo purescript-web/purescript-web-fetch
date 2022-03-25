@@ -81,7 +81,7 @@ type RequestOptions =
 defaultOptions :: { | RequestOptions }
 defaultOptions =
   { method: GET
-  , headers: Headers.empty
+  , headers: Headers.empty unit
   , body: RequestBody.empty
   , credentials: RequestCredentials.SameOrigin
   , cache: RequestCache.Default
