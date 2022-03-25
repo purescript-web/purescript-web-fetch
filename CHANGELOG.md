@@ -6,6 +6,7 @@ Notable changes to this project are documented in this file. The format is based
 
 Breaking changes:
 - Migrate FFI to ES modules (#8 by @JordanMartinez)
+- Add `Unit` arg to `empty` to fix empty headers creation (#9 by @JordanMartinez)
 
 New features:
 
