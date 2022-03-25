@@ -49,5 +49,5 @@ toArray = runFn2 _toArray Tuple
 toUnfoldable :: forall f. Unfoldable f => Headers -> f (Tuple String String)
 toUnfoldable = Array.toUnfoldable <<< toArray
 
-empty :: Headers
-empty = fromFoldable []
+empty :: Unit -> Headers
+empty _ = fromFoldable []
