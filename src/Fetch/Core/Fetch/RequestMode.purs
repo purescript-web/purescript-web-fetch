@@ -1,4 +1,4 @@
-module Web.Fetch.RequestMode where
+module Fetch.Core.RequestMode where
 
 import Data.Maybe (Maybe(..))
 

@@ -1,8 +1,23 @@
-module Web.Fetch.Response where
+module Fetch.Core.Response
+  ( Response
+  , arrayBuffer
+  , blob
+  , body
+  , headers
+  , json
+  , ok
+  , redirected
+  , status
+  , statusText
+  , text
+  , url
+  )
+  where
 
 import Data.ArrayBuffer.Types (ArrayBuffer, Uint8Array)
 import Effect (Effect)
-import Web.Fetch.Headers (Headers)
+import Fetch.Core.Headers (Headers)
+import Foreign (Foreign)
 import Web.File.Blob (Blob)
 import Web.Promise (Promise)
 import Web.Streams.ReadableStream (ReadableStream)
@@ -28,3 +43,5 @@ foreign import arrayBuffer :: Response -> Effect (Promise ArrayBuffer)
 foreign import blob :: Response -> Effect (Promise Blob)
 
 foreign import text :: Response -> Effect (Promise String)
+
+foreign import json :: Response -> Effect (Promise Foreign)

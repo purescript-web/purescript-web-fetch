@@ -1,4 +1,4 @@
-module Web.Fetch.Integrity where
+module Fetch.Core.Integrity where
 
 import Data.Newtype (class Newtype)
 import Prelude (class Eq, class Ord)

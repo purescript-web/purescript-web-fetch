@@ -1,4 +1,4 @@
-module Web.Fetch.Headers
+module Fetch.Core.Headers
   ( Headers
   , fromFoldable
   , fromRecord

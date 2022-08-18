@@ -1,4 +1,4 @@
-module Web.Fetch.AbortController where
+module Fetch.Core.AbortController where
 
 import Effect (Effect)
 import Prelude (Unit)

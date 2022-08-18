@@ -1,4 +1,4 @@
-module Web.Fetch.RequestRedirect where
+module Fetch.Core.RequestRedirect where
 
 import Data.Maybe (Maybe(..))
 

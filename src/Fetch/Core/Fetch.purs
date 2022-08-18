@@ -1,4 +1,4 @@
-module Web.Fetch
+module Fetch.Core
   ( FetchOptions
   , fetch
   , fetchWithOptions
@@ -7,9 +7,9 @@ module Web.Fetch
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
 import Prim.Row as Row
-import Web.Fetch.AbortController (AbortSignal)
-import Web.Fetch.Request (Request)
-import Web.Fetch.Response (Response)
+import Fetch.Core.AbortController (AbortSignal)
+import Fetch.Core.Request (Request)
+import Fetch.Core.Response (Response)
 import Web.Promise (Promise)
 
 type FetchOptions =

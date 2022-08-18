@@ -45,3 +45,9 @@ export function text(resp) {
     return resp.text();
   };
 }
+
+export function json(resp) {
+  return function() {
+    return resp.json();
+  };
+}
