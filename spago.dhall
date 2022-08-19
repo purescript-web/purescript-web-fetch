@@ -24,4 +24,6 @@
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
+, license = "MIT"
+, repository = "https://github.com/rowtype-yoga/purescript-yoga-fetch.git"
 }
