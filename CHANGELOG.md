@@ -5,8 +5,11 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
+- Fork from web-fetch
+- Rename package
 
 New features:
+- Improve request options to only use the provided attributes instead of a full options record using default values
 
 Bugfixes:
 
