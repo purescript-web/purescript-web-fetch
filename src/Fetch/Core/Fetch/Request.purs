@@ -2,6 +2,7 @@ module Fetch.Core.Request
   ( Request
   , RequestOptions
   , UnsafeRequestOptions
+  , _unsafeNew
   , class ToInternal
   , class ToInternalConverter
   , class ToInternalHelper
@@ -15,9 +16,7 @@ module Fetch.Core.Request
 import Prelude
 
 import Data.HTTP.Method (Method)
-import Data.Maybe (Maybe)
 import Data.Newtype (un)
-import Data.Nullable (Nullable)
 import Data.Symbol (class IsSymbol)
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
@@ -51,7 +50,7 @@ type UnsafeRequestOptions =
   , credentials :: String
   , cache :: String
   , mode :: String
-  , referrer :: Nullable String
+  , referrer :: String
   , referrerPolicy :: String
   , integrity :: String
   )
@@ -63,7 +62,7 @@ type RequestOptions =
   , credentials :: RequestCredentials
   , cache :: RequestCache
   , mode :: RequestMode
-  , referrer :: Maybe Referrer
+  , referrer :: Referrer
   , referrerPolicy :: ReferrerPolicy
   , integrity :: Integrity
   )

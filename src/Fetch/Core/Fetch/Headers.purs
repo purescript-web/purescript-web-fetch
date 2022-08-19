@@ -36,9 +36,13 @@ foreign import fromObject :: Object String -> Headers
 fromFoldable :: forall f. Foldable f => f (Tuple String String) -> Headers
 fromFoldable f = unsafePerformEffect do
   init <- unsafeNew
-  foldM (\headers (Tuple key value) -> do
-    runEffectFn3 unsafeAppend key value headers
-    pure headers) init f
+  foldM
+    ( \headers (Tuple key value) -> do
+        runEffectFn3 unsafeAppend key value headers
+        pure headers
+    )
+    init
+    f
 
 fromRecord :: forall r. Homogeneous r String => { | r } -> Headers
 fromRecord = unsafeFromRecord

@@ -5,6 +5,6 @@ import Prelude (class Eq, class Ord)
 
 newtype Integrity = Integrity String
 
-derive instance newtypeIntegrity :: Newtype Integrity _
-derive newtype instance eqIntegrity :: Eq Integrity
-derive newtype instance ordIntegrity :: Ord Integrity
+derive instance Newtype Integrity _
+derive newtype instance Eq Integrity
+derive newtype instance Ord Integrity

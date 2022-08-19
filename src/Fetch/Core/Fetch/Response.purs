@@ -11,8 +11,7 @@ module Fetch.Core.Response
   , statusText
   , text
   , url
-  )
-  where
+  ) where
 
 import Data.ArrayBuffer.Types (ArrayBuffer, Uint8Array)
 import Effect (Effect)
