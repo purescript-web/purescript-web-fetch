@@ -7,10 +7,10 @@ module Web.Fetch
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
 import Prim.Row as Row
+import Promise (Promise)
 import Web.Fetch.AbortController (AbortSignal)
 import Web.Fetch.Request (Request)
 import Web.Fetch.Response (Response)
-import Web.Promise (Promise)
 
 type FetchOptions =
   ( keepalive :: Boolean
