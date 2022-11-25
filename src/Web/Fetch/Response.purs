@@ -2,9 +2,9 @@ module Web.Fetch.Response where
 
 import Data.ArrayBuffer.Types (ArrayBuffer, Uint8Array)
 import Effect (Effect)
+import Promise (Promise)
 import Web.Fetch.Headers (Headers)
 import Web.File.Blob (Blob)
-import Web.Promise (Promise)
 import Web.Streams.ReadableStream (ReadableStream)
 
 foreign import data Response :: Type
