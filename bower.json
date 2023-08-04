@@ -16,7 +16,7 @@
     "purescript-foreign-object": "^v4.0.0",
     "purescript-functions": "^v6.0.0",
     "purescript-http-methods": "^v6.0.0",
-    "purescript-js-promise": "https://github.com/purescript-contrib/purescript-js-promise.git#^v3.0.0",
+    "purescript-js-promise": "https://github.com/purescript-contrib/purescript-js-promise.git#^v1.0.0",
     "purescript-maybe": "^v6.0.0",
     "purescript-newtype": "^v5.0.0",
     "purescript-nullable": "^v6.0.0",
