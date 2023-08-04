@@ -18,7 +18,7 @@ import Effect (Effect)
 import Fetch.Core.Headers (Headers)
 import Foreign (Foreign)
 import Web.File.Blob (Blob)
-import Web.Promise (Promise)
+import Promise (Promise)
 import Web.Streams.ReadableStream (ReadableStream)
 
 foreign import data Response :: Type
