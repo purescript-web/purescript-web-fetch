@@ -10,7 +10,7 @@ import Prim.Row as Row
 import Fetch.Core.AbortController (AbortSignal)
 import Fetch.Core.Request (Request)
 import Fetch.Core.Response (Response)
-import Web.Promise (Promise)
+import Promise (Promise)
 
 type FetchOptions =
   ( keepalive :: Boolean
