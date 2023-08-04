@@ -23,6 +23,6 @@
     "purescript-record": "^4.0.0",
     "purescript-typelevel-prelude": "^7.0.0",
     "purescript-web-file": "^4.0.0",
-    "purescript-web-streams": "https://github.com/purescript-web/purescript-web-streams.git#^3.0.0"
+    "purescript-web-streams": "https://github.com/purescript-web/purescript-web-streams.git#^4.0.0"
   }
 }
