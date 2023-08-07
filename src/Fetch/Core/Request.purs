@@ -20,6 +20,8 @@ import Data.Newtype (un)
 import Data.Symbol (class IsSymbol)
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
+import Fetch.Core.Duplex (Duplex)
+import Fetch.Core.Duplex as Duplex
 import Fetch.Core.Headers (Headers)
 import Fetch.Core.Integrity (Integrity(..))
 import Fetch.Core.Referrer (Referrer)
@@ -53,6 +55,7 @@ type UnsafeRequestOptions =
   , referrer :: String
   , referrerPolicy :: String
   , integrity :: String
+  , duplex :: String
   )
 
 type RequestOptions =
@@ -65,6 +68,7 @@ type RequestOptions =
   , referrer :: Referrer
   , referrerPolicy :: ReferrerPolicy
   , integrity :: Integrity
+  , duplex :: Duplex
   )
 
 toUnsafeOptions
@@ -150,3 +154,5 @@ instance ToInternalConverter ReferrerPolicy String where
 instance ToInternalConverter Integrity String where
   convertImpl = un Integrity
 
+instance ToInternalConverter Duplex String where
+  convertImpl = Duplex.toString

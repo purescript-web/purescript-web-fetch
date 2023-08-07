@@ -6,10 +6,9 @@ in      conf
               conf.dependencies
             # [ "aff"
               , "aff-promise"
-              , "effect"
-              , "spec"
-              , "spec-discovery"
-              , "strings"
+              , "console"
               , "debug"
+              , "effect"
+              , "unsafe-coerce"
               ]
         }
