@@ -17,8 +17,8 @@ import Data.ArrayBuffer.Types (ArrayBuffer, Uint8Array)
 import Effect (Effect)
 import Fetch.Core.Headers (Headers)
 import Foreign (Foreign)
-import Web.File.Blob (Blob)
 import Promise (Promise)
+import Web.File.Blob (Blob)
 import Web.Streams.ReadableStream (ReadableStream)
 
 foreign import data Response :: Type

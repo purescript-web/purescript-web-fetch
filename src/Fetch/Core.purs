@@ -6,10 +6,10 @@ module Fetch.Core
 
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
-import Prim.Row as Row
 import Fetch.Core.AbortController (AbortSignal)
 import Fetch.Core.Request (Request)
 import Fetch.Core.Response (Response)
+import Prim.Row as Row
 import Promise (Promise)
 
 type FetchOptions =
