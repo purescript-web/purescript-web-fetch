@@ -1,4 +1,4 @@
-module Fetch.Core.ReferrerPolicy where
+module JS.Fetch.ReferrerPolicy where
 
 import Data.Maybe (Maybe(..))
 

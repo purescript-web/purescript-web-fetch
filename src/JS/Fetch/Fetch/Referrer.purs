@@ -1,4 +1,4 @@
-module Fetch.Core.Referrer where
+module JS.Fetch.Referrer where
 
 data Referrer
   = ReferrerNone

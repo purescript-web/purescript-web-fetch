@@ -1,4 +1,4 @@
-module Fetch.Core.Headers
+module JS.Fetch.Headers
   ( Headers
   , fromFoldable
   , fromRecord

@@ -1,4 +1,4 @@
-module Fetch.Core.Duplex where
+module JS.Fetch.Duplex where
 
 import Prelude
 

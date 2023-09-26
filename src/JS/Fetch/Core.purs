@@ -1,4 +1,4 @@
-module Fetch.Core
+module JS.Fetch
   ( FetchOptions
   , fetch
   , fetchWithOptions
@@ -6,9 +6,9 @@ module Fetch.Core
 
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
-import Fetch.Core.AbortController (AbortSignal)
-import Fetch.Core.Request (Request)
-import Fetch.Core.Response (Response)
+import JS.Fetch.AbortController (AbortSignal)
+import JS.Fetch.Request (Request)
+import JS.Fetch.Response (Response)
 import Prim.Row as Row
 import Promise (Promise)
 

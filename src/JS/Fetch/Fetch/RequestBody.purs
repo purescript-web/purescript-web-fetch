@@ -1,4 +1,4 @@
-module Fetch.Core.RequestBody where
+module JS.Fetch.RequestBody where
 
 import Data.ArrayBuffer.Types (ArrayBuffer, ArrayView, Uint8Array)
 import Web.Streams.ReadableStream (ReadableStream)

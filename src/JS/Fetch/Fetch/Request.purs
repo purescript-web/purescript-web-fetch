@@ -1,4 +1,4 @@
-module Fetch.Core.Request
+module JS.Fetch.Request
   ( Request
   , RequestOptions
   , UnsafeRequestOptions
@@ -20,21 +20,21 @@ import Data.Newtype (un)
 import Data.Symbol (class IsSymbol)
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
-import Fetch.Core.Duplex (Duplex)
-import Fetch.Core.Duplex as Duplex
-import Fetch.Core.Headers (Headers)
-import Fetch.Core.Integrity (Integrity(..))
-import Fetch.Core.Referrer (Referrer)
-import Fetch.Core.Referrer as Referrer
-import Fetch.Core.ReferrerPolicy (ReferrerPolicy)
-import Fetch.Core.ReferrerPolicy as ReferrerPolicy
-import Fetch.Core.RequestBody (RequestBody)
-import Fetch.Core.RequestCache (RequestCache)
-import Fetch.Core.RequestCache as RequestCache
-import Fetch.Core.RequestCredentials (RequestCredentials)
-import Fetch.Core.RequestCredentials as RequestCredentials
-import Fetch.Core.RequestMode (RequestMode)
-import Fetch.Core.RequestMode as RequestMode
+import JS.Fetch.Duplex (Duplex)
+import JS.Fetch.Duplex as Duplex
+import JS.Fetch.Headers (Headers)
+import JS.Fetch.Integrity (Integrity(..))
+import JS.Fetch.Referrer (Referrer)
+import JS.Fetch.Referrer as Referrer
+import JS.Fetch.ReferrerPolicy (ReferrerPolicy)
+import JS.Fetch.ReferrerPolicy as ReferrerPolicy
+import JS.Fetch.RequestBody (RequestBody)
+import JS.Fetch.RequestCache (RequestCache)
+import JS.Fetch.RequestCache as RequestCache
+import JS.Fetch.RequestCredentials (RequestCredentials)
+import JS.Fetch.RequestCredentials as RequestCredentials
+import JS.Fetch.RequestMode (RequestMode)
+import JS.Fetch.RequestMode as RequestMode
 import Prim.Row (class Lacks, class Union)
 import Prim.Row as R
 import Prim.RowList as RL

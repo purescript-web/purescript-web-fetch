@@ -22,5 +22,5 @@
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
 , license = "MIT"
-, repository = "https://github.com/rowtype-yoga/purescript-fetch-core.git"
+, repository = "https://github.com/purescript-contrib/purescript-js-fetch.git"
 }

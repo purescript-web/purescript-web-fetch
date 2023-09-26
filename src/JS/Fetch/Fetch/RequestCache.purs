@@ -1,4 +1,4 @@
-module Fetch.Core.RequestCache where
+module JS.Fetch.RequestCache where
 
 import Data.Maybe (Maybe(..))
 

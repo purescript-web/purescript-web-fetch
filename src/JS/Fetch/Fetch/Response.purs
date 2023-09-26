@@ -1,4 +1,4 @@
-module Fetch.Core.Response
+module JS.Fetch.Response
   ( Response
   , arrayBuffer
   , blob
@@ -15,8 +15,8 @@ module Fetch.Core.Response
 
 import Data.ArrayBuffer.Types (ArrayBuffer, Uint8Array)
 import Effect (Effect)
-import Fetch.Core.Headers (Headers)
 import Foreign (Foreign)
+import JS.Fetch.Headers (Headers)
 import Promise (Promise)
 import Web.File.Blob (Blob)
 import Web.Streams.ReadableStream (ReadableStream)
