@@ -1,4 +1,4 @@
-module Web.Fetch.Referrer where
+module JS.Fetch.Referrer where
 
 data Referrer
   = ReferrerNone
@@ -9,7 +9,7 @@ toString :: Referrer -> String
 toString = case _ of
   ReferrerNone -> "none"
   ReferrerClient -> "client"
-  ReferrerUrl url ->  url
+  ReferrerUrl url -> url
 
 fromString :: String -> Referrer
 fromString = case _ of

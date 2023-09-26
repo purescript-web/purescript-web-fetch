@@ -1,4 +1,4 @@
-module Web.Fetch
+module JS.Fetch
   ( FetchOptions
   , fetch
   , fetchWithOptions
@@ -6,11 +6,11 @@ module Web.Fetch
 
 import Effect (Effect)
 import Effect.Uncurried (EffectFn2, runEffectFn2)
+import JS.Fetch.AbortController (AbortSignal)
+import JS.Fetch.Request (Request)
+import JS.Fetch.Response (Response)
 import Prim.Row as Row
 import Promise (Promise)
-import Web.Fetch.AbortController (AbortSignal)
-import Web.Fetch.Request (Request)
-import Web.Fetch.Response (Response)
 
 type FetchOptions =
   ( keepalive :: Boolean

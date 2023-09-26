@@ -1,4 +1,4 @@
-module Web.Fetch.RequestCredentials where
+module JS.Fetch.RequestCredentials where
 
 import Data.Maybe (Maybe(..))
 
