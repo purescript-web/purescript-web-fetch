@@ -23,25 +23,25 @@ export function url(resp) {
 }
 
 export function body(resp) {
-  return function() {
+  return function () {
     return resp.body;
   };
 }
 
 export function arrayBuffer(resp) {
-  return function() {
+  return function () {
     return resp.arrayBuffer();
   };
 }
 
 export function blob(resp) {
-  return function() {
+  return function () {
     return resp.blob();
   };
 }
 
 export function text(resp) {
-  return function() {
+  return function () {
     return resp.text();
   };
 }

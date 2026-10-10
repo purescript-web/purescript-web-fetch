@@ -4,7 +4,7 @@ const newImpl = function () {
 export { newImpl as new };
 
 export function abort(controller) {
-  return function() {
+  return function () {
     return controller.abort();
   };
 }
