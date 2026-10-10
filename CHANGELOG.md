@@ -5,7 +5,19 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
-- Migrated from `web-promise` to `js-promise`
+
+New features:
+
+Bugfixes:
+
+Other improvements:
+- Migrated from Bower/Pulp to registry-backed Spago, preserving published dependency bounds (#17 by @thomashoneyman)
+- Updated CI to Node.js 24 and current GitHub Actions, pinned development tools, and replaced ESLint with Oxlint/Oxfmt and updated purs-tidy (#17 by @thomashoneyman)
+
+## [v4.0.1](https://github.com/purescript-web/purescript-web-fetch/releases/tag/v4.0.1) - 2023-08-04
+
+Breaking changes:
+- Migrated from `web-promise` to `js-promise` (#13 by @garyb)
 
 New features:
 
