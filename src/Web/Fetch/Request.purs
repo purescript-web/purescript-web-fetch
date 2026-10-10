@@ -119,13 +119,13 @@ new' url options = runEffectFn2 _unsafeNew url (toUnsafeOptions (buildRequestOpt
 class BuildRequestOptions a where
   buildRequestOptions :: a -> { | RequestOptions }
 
-instance buildRequestOptionsRecord
-  :: ( RowList.RowToList r rl
-     , ConvertOptions rl r r'
-     , Row.Union r' RequestOptions r''
-     , Row.Nub r'' RequestOptions
-     )
-  => BuildRequestOptions { | r } where
+instance buildRequestOptionsRecord ::
+  ( RowList.RowToList r rl
+  , ConvertOptions rl r r'
+  , Row.Union r' RequestOptions r''
+  , Row.Nub r'' RequestOptions
+  ) =>
+  BuildRequestOptions { | r } where
   buildRequestOptions r = merge (Record.build (convertOptions (Proxy :: _ rl)) r) defaultOptions
 
 class ConvertOptions (rl :: RowList Type) (input :: Row Type) (output :: Row Type) | rl input -> output where
@@ -137,7 +137,8 @@ instance convertOptionsCons ::
   , Row.Cons field from rx input
   , Row.Cons field to rx input'
   , IsSymbol field
-  ) => ConvertOptions (RowList.Cons field from rest) input output where
+  ) =>
+  ConvertOptions (RowList.Cons field from rest) input output where
   convertOptions _ =
     convertOptions (Proxy :: _ rest)
       <<< Record.modify (Proxy :: _ field) (convertOption (Proxy :: _ field))
